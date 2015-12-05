@@ -12,9 +12,8 @@
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "del": "^2.1.0",
-    "globby": "^4.0.0",
+    "glob": "^6.0.1",
     "gulp": "^3.8.8",
-    "gulp-babel": "^6.1.1",
     "gulp-bower": "0.0.11",
     "gulp-concat": "^2.6.0",
     "gulp-flatten": "^0.2.0",
@@ -26,16 +25,15 @@
     "gulp-uglify": "^1.5.1",
     "imagemin-pngquant": "^4.2.0",
     "run-sequence": "^1.1.5",
-    "through2": "^2.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "vinyl-transform": "^1.0.0",
     "watchify": "^3.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "gulp"
   },
-  "author": "Mohamed Ali Abuelwafa <abuelwafa@abuelwafa.net>",
+  "repository": "abuelwafa/td-workshop",
+  "author": "Mohamed Ali Abuelwafa <abuelwafa@abuelwafa.net> (http://abuelwafa.net)",
   "license": "MIT"
 }

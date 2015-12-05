@@ -17,7 +17,9 @@ vagrant up
 
 2- Build the project assets.
 ```
+bower install
 npm install
+gulp
 ```
 
 3- Migrate and seed the database.
