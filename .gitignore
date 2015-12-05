@@ -3,3 +3,24 @@
 Homestead.yaml
 Homestead.json
 .env
+/bower_components
+
+/.vagrant*/
+
+# os dump files
+.DS_Store
+Desktop.ini
+$RECYCLE.BIN/
+Thumbs.db
+._*
+.Trashes
+.Spotlight-V100
+
+/**/.sass-cache
+
+# vim generated .swp files
+**/*.swp
+
+/public/css
+/public/js
+/public/vendor

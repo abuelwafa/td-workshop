@@ -1,27 +1,33 @@
-## Laravel PHP Framework
+# Egypt Car Shop Web scraper
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+A simple web scraper app for [EgyptCarShop](http://egyptcarshop.com)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Development Dependencies
+- [Virtual box](http://virtualbox.org/)
+- [Vagrant](https://www.vagrantup.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Bower](http://bower.io/)
+- [Gulp](http://gulpjs.com/)
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+### Getting up and running
+1- Run the vagrant virtual machine to boot up the server. Note that this will take a little long if you are running it for the first time since it will be downloading and installing ubuntu server, and the lamp stack.
+```
+vagrant up
+```
 
-## Official Documentation
+2- Build the project assets.
+```
+npm install
+```
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+3- Migrate and seed the database.
+```
+vagrant ssh
+cd /var/www/html
+php artisan migrate --seed
+exit
+```
 
-## Contributing
+4- Navigate to `http://localhost:8080` in your browser.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+5- For development and starting to make changes, run `gulp develop` to watch project files and automatically build assets upon changes.

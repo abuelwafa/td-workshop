@@ -1,0 +1,23 @@
+{
+  "name": "egyptcarshop-web-scraper",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mohamed Ali Abuelwafa <mohamed.abuelwafa@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6"
+  }
+}

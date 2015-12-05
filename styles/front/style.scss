@@ -1,0 +1,36 @@
+@import "../vendor/bootstrap/dist/css/bootstrap.min.css";
+@import "../vendor/bootstrap/dist/css/bootstrap-theme.min.css";
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+input#scrapeurl{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 800px){
+        width: 100%;
+    }
+}
+
+.jumbotron{
+    text-align: center;
+    h1{
+        font-size: 3em;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+}
+
+div.results-content{
+    position: relative;
+
+    div.sorting-buttons{
+        position: absolute;
+        top: 1em;
+        right: 0;
+    }
+}
