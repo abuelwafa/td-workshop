@@ -33,12 +33,8 @@ sed -i "/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOve
 # enable php mcrypt extension
 php5enmod mcrypt
 
-# setting permissions for the storage directory
-# chown -R www-data:www-data /var/www/html/storage
-# chmod -R 777 /var/www/html/storage
-
-# remove default index html page
-rm /var/www/html/index.html
+# remove default html folder
+rm -rf /var/www/html/
 
 echo "Installing Composer..."
 curl -sS https://getcomposer.org/installer | php
