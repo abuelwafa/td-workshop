@@ -5,6 +5,7 @@ A simple web scraper app for [EgyptCarShop](http://egyptcarshop.com)
 ## Development Dependencies
 - [Virtual box](http://virtualbox.org/)
 - [Vagrant](https://www.vagrantup.com/)
+- [Composer](https://getcomposer.org/)
 - [Node.js](https://nodejs.org/en/)
 - [Bower](http://bower.io/)
 - [Gulp](http://gulpjs.com/)
@@ -15,21 +16,24 @@ A simple web scraper app for [EgyptCarShop](http://egyptcarshop.com)
 vagrant up
 ```
 
-2- Build the project assets.
+2- Download dependencies and build the project assets.
 ```
+composer install
 bower install
 npm install
 gulp
 ```
 
-3- Migrate and seed the database.
+3- Create your own environtment file `.env`, by copying the file `.env.example`.
+
+4- Migrate and seed the database.
 ```
 vagrant ssh
-cd /var/www/html
+cd /var/www
 php artisan migrate --seed
 exit
 ```
 
-4- Navigate to `http://localhost:8080` in your browser.
+5- Navigate to `http://localhost:8080` in your browser.
 
-5- For development and starting to make changes, run `gulp develop` to watch project files and automatically build assets upon changes.
+6- For development and starting to make changes, run `gulp develop` to watch project files and automatically build assets upon changes.
