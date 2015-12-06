@@ -26,11 +26,12 @@ gulp
 
 3- Create your own environtment file `.env`, by copying the file `.env.example`.
 
-4- Migrate and seed the database.
+4- Migrate and seed the database. and create a new applicatin key.
 ```
 vagrant ssh
 cd /var/www
 php artisan migrate --seed
+sudo php artisan key:generate
 exit
 ```
 
